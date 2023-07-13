@@ -1,0 +1,40 @@
+<input
+  type="range"
+  min="10"
+  max="60"
+  step="5"
+  [value]="fontSize"
+  (input)="cambiarFuente($event)"
+/>
+<input type="color" [value]="color" (input)="cambiarColor($event)" />
+
+<p [ngStyle]="{ 'font-size': fontSize + 'px', 'background-color': color }">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo animi iusto
+  dignissimos itaque repellendus doloribus quibusdam tempore adipisci enim
+  doloremque id voluptas facere deleniti, tempora minus expedita dolorum unde
+  inventore.
+</p>
+<hr />
+<section class="container">
+  <div>
+    <label for="propiedad">Introduce una propiedad de CSS</label>
+    <input
+      class="form-control"
+      type="text"
+      id="propiedad"
+      [(ngModel)]="propiedad"
+    />
+  </div>
+  <div>
+    <label for="valor">Introduce un valor de CSS</label>
+    <input class="form-control" type="text" id="valor" [(ngModel)]="valor" />
+  </div>
+  <button class="btn btn-primary mt-3" (click)="cambiarEstilos()">
+    Guardar
+  </button>
+</section>
+<p [ngStyle]="estilosParrafo">
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni magnam
+  molestiae earum, ipsam, ad exercitationem, sed aliquid facere ipsa quo quas
+  neque culpa eveniet error perspiciatis veritatis accusamus modi esse?
+</p>

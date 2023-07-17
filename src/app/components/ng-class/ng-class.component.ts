@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./ng-class.component.css']
 })
 export class NgClassComponent {
+  estado: boolean = false;
+  textoBtn: string = 'Abrir';
+  textoNotificacion: string = 'El menu esta cerrado';
+
+  cambiarEstado() {
+    this.estado = !this.estado;
+    this.textoBtn = this.estado ? 'Cerrar' : 'Abrir';
+    this.textoNotificacion = this.estado ? 'El menu esta abierto' : 'El menu esta cerrado';
+  }
 
 }

@@ -1,0 +1,70 @@
+<div class="tabs">
+  <nav>
+    <ul class="menu">
+      <li
+        [ngClass]="{ activo: sectionActual === 'sobremi' }"
+        (click)="cargarSeccion('sobremi')"
+      >
+        Sobre mí
+      </li>
+      <li
+        [ngClass]="{ activo: sectionActual === 'experiencia' }"
+        (click)="cargarSeccion('experiencia')"
+      >
+        Experiencia
+      </li>
+      <li
+        [ngClass]="{ activo: sectionActual === 'estudios' }"
+        (click)="cargarSeccion('estudios')"
+      >
+        Estudios
+      </li>
+    </ul>
+  </nav>
+  <section *ngIf="sectionActual === 'sobremi'">
+    <h3>Sobre mí</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iure ea sit
+      exercitationem sint reprehenderit illo consequatur. Sequi est
+      necessitatibus sit qui voluptates sed officiis, molestias molestiae
+      blanditiis, quibusdam maxime? Fuga provident nulla ipsam deleniti, quis
+      consequuntur vel, voluptate at nesciunt modi cupiditate, voluptates quae!
+      Accusamus, voluptate cum repudiandae accusantium dolores doloremque harum
+      excepturi obcaecati esse iste nihil suscipit porro?
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+      repudiandae facilis quos aut a dolor quas quisquam? Mollitia fugiat atque,
+      asperiores ducimus quaerat nostrum voluptatem beatae. Fugiat tenetur ullam
+      neque.
+    </p>
+  </section>
+  <section *ngIf="sectionActual === 'experiencia'">
+    <h3>Experiencia</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+      reiciendis aperiam fuga. Consequuntur in et, velit at sunt consequatur,
+      nostrum dolore quis a nemo quos quod unde dolorem amet vero.
+    </p>
+  </section>
+  <section *ngIf="sectionActual === 'estudios'">
+    <h3>Estudios</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio porro,
+      ducimus quidem repellendus accusantium numquam, debitis soluta nisi
+      pariatur enim dignissimos facere. Nobis adipisci eius velit facilis quam
+      quisquam eos!
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita facilis
+      consequatur officiis quo adipisci quam rem explicabo dolorem aspernatur
+      totam incidunt nisi nesciunt doloribus consequuntur, quisquam saepe
+      debitis quas aliquid?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita
+      officia dicta iste nam. Magni, quaerat sequi voluptates ex quae saepe ut
+      incidunt quis libero dolor facilis! Excepturi, iusto fugiat.
+    </p>
+  </section>
+</div>

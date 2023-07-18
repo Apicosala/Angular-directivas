@@ -1,0 +1,20 @@
+<button (click)="cambiarEstado()">Cambiar</button>
+<hr />
+<div *ngIf="estado">
+  <p style="background-color: green">Mi estado se visualiza en true</p>
+</div>
+<div style="background-color: tomato" *ngIf="!estado">
+  <p>Mi estado se visualiza en false</p>
+</div>
+<!-- Opción 2 -->
+<div *ngIf="estado; else bloqueElse">
+  <p>El estado se visualiza como true</p>
+</div>
+<ng-template #bloqueElse>
+  <div>
+    <p>El estado se visualiza como false</p>
+  </div>
+</ng-template>
+
+<!-- Opción 3 then (bloque true) else (bloque false) me sirve para poner condicion en cialquier elemento pero no
+aplicarlo sobre el si no sobre otros dos elementos, tienen que ser contiguos-->

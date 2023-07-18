@@ -7,6 +7,8 @@ import { NgforComponent } from './components/ngfor/ngfor.component';
 import { EpisodioComponent } from './components/ngfor/episodio/episodio.component';
 import { NgStyleComponent } from './components/ng-style/ng-style.component';
 import { NgClassComponent } from './components/ng-class/ng-class.component';
+import { NgifComponent } from './components/ngif/ngif.component';
+import { NgifelseComponent } from './components/ngifelse/ngifelse.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { NgClassComponent } from './components/ng-class/ng-class.component';
     NgforComponent,
     EpisodioComponent,
     NgStyleComponent,
-    NgClassComponent
+    NgClassComponent,
+    NgifComponent,
+    NgifelseComponent
   ],
   imports: [
     BrowserModule,

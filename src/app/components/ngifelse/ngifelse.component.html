@@ -16,5 +16,12 @@
   </div>
 </ng-template>
 
-<!-- Opción 3 then (bloque true) else (bloque false) me sirve para poner condicion en cialquier elemento pero no
-aplicarlo sobre el si no sobre otros dos elementos, tienen que ser contiguos-->
+<!-- Opción 3 then (bloque true) else (bloque false) me sirve para poner condicion en cualquier elemento pero no
+aplicarlo sobre él, si no sobre otros dos elementos, tienen que ser contiguos-->
+<div *ngIf="estado; then contentTrue; else contentFalse"></div>
+<ng-template #contentTrue>
+  <p>El estado es true</p>
+</ng-template>
+<ng-template #contentFalse>
+  <p>El estado es false</p>
+</ng-template>

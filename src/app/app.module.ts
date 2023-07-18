@@ -9,6 +9,7 @@ import { NgStyleComponent } from './components/ng-style/ng-style.component';
 import { NgClassComponent } from './components/ng-class/ng-class.component';
 import { NgifComponent } from './components/ngif/ngif.component';
 import { NgifelseComponent } from './components/ngifelse/ngifelse.component';
+import { NgswitchComponent } from './components/ngswitch/ngswitch.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { NgifelseComponent } from './components/ngifelse/ngifelse.component';
     NgStyleComponent,
     NgClassComponent,
     NgifComponent,
-    NgifelseComponent
+    NgifelseComponent,
+    NgswitchComponent
   ],
   imports: [
     BrowserModule,
